@@ -1,0 +1,194 @@
+@font-face {
+    font-family: 'Noto Serif';
+    src: url('fonts/NotoSerif-VariableFont_wdth,wght.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'IBM Plex Mono';
+    src: url('fonts/IBMPlexMono-Medium.ttf') format('truetype');
+}
+
+
+
+p,
+a,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: 'Noto Serif', serif;
+}
+
+
+
+p,
+header a,
+time {
+    color: #292F36;
+}
+
+body {
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    background-color: #F5F5F5;
+}
+
+
+h1 {
+    margin-bottom: 0.2rem;
+    line-height: 1.2em;
+    text-decoration: none;
+}
+
+main,
+aside {
+    padding: .5rem 1rem;
+}
+
+header {
+    padding: 3rem 0;
+    font-size: 2rem;
+    text-align: center;
+}
+
+header a {
+    text-decoration: underline;
+    font-size: 3rem;
+    font-weight: 800;
+}
+
+footer {
+    margin: 2rem 0;
+}
+
+footer p {
+    text-align: center;
+}
+
+time,
+.reading-time {
+    font-family: 'IBM Plex Mono', monospace;
+    font-size: 1.2rem;
+    margin: 0.5rem 0;
+    display: block;
+    line-height: 1rem;
+}
+
+.reading-time {
+    margin-top: 2rem;
+}
+
+article {
+    margin: 2rem 0;
+}
+
+article p {
+    margin-top: 0;
+}
+
+p {
+    font-size: 1.1rem;
+    margin: 2em 0;
+    line-height: 1.75em;
+}
+
+main>div:last-child {
+    margin-top: 4rem;
+    text-align: center;
+    font-size: 1.2em;
+}
+
+pre {
+    padding: 0.5rem 1rem;
+    overflow: scroll;
+    text-align: left;
+}
+
+aside ul {
+    list-style-type: disclosure-closed;
+}
+
+aside ul li {
+    margin: 0.5rem 0;
+}
+
+aside a {
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 1.2em;
+}
+
+code,
+kbd,
+samp {
+    font-family: 'IBM Plex Mono', monospace;
+    font-size: 1em;
+}
+
+#tags h3,
+#tags ul,
+#tags li {
+    display: inline-block;
+    padding-left: 0;
+}
+
+a.tags {
+    font-family: 'IBM Plex Mono', monospace;
+    font-size: 1.2rem;
+    text-decoration: none;
+    padding: 1rem 0.2rem;
+}
+
+#tag_h1 {
+    font-family: 'IBM Plex Mono', monospace;
+}
+
+.tags-div {
+    margin-bottom: 2.5rem;
+}
+
+.tags-div a:first-child {
+
+    padding-left: 0;
+}
+
+@media (min-width:320px) {
+    /* smartphones, iPhone, portrait 480x320 phones */
+}
+
+@media (min-width:481px) {
+
+    /* portrait e-readers (Nook/Kindle), smaller tablets @ 600 or @ 640 wide. */
+}
+
+@media (min-width:641px) {
+
+    /* portrait tablets, portrait iPad, landscape e-readers, landscape 800x480 or 854x480 phones */
+
+}
+
+@media (min-width:961px) {
+
+    /* tablet, landscape iPad, lo-res laptops ands desktops */
+    body {
+        width: 90ch;
+        margin: auto;
+    }
+
+    p {
+        font-size: 1.2rem;
+        margin: 2em 0;
+        line-height: 1.75em;
+    }
+}
+
+@media (min-width:1025px) {
+    /* big landscape tablets, laptops, and desktops */
+}
+
+@media (min-width:1281px) {
+    /* hi-res laptops and desktops */
+}

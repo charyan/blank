@@ -1,26 +1,33 @@
 {{ define "main" }}
-	<main>
-		<article>
-			<h1>{{ .Title }}</h1>
-			<time datetime="{{ .Date.Format "2006-01-02T15:04:05" }}">{{ .Date.Format "02.01.2006 15:04" }}</time>
-			<div>
-				{{ .Content }}
-			</div>
-			{{ with .Params.tags }}
-			<div>
-				<ul id="tags">
-					{{ range . }}
-					<li><a href="{{ "/tags/" | relLangURL }}{{ . | urlize }}">{{ . }}</a></li>
-					{{ end }}
-				</ul>
-			</div>
+<main>
+	<article>
+		<h1>{{ .Title }}</h1>
+		<p class="reading-time">Reading time {{ .ReadingTime }} {{ if eq .ReadingTime 1 }} minute {{ else }} minutes {{ end }}</p>
+		<time datetime="{{ .Date.Format " 2006-01-02T15:04:05" }}">Posted {{ .Date.Format "2006-01-02" }}</time>
+
+		{{ if .Lastmod }}
+		{{ if ne .Lastmod .Date }}
+		<time datetime="{{ .Lastmod.Format " 2006-01-02T15:04:05" }}">Updated {{ .Lastmod.Format "2006-01-02" }}</time>
+		{{ end }}
+		{{ end }}
+
+
+		{{ if .Params.tags }}
+		<div class="tags-div">
+			{{ range .Params.tags }}
+			<a class="tags" href="{{ "tags/" | relLangURL }}{{ . | urlize }}">#{{ . }}</a>
 			{{ end }}
-			{{ with .Site.DisqusShortname }}
-			<div>
-				{{ template "_internal/disqus.html" . }}
-			</div>
 			{{ end }}
-		</article>
-	</main>
+		</div>
+		<div>
+			{{ .Content }}
+		</div>
+		{{ with .Site.DisqusShortname }}
+		<div>
+			{{ template "_internal/disqus.html" . }}
+		</div>
+		{{ end }}
+	</article>
+</main>
 {{ partial "sidebar.html" . }}
 {{ end }}
