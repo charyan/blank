@@ -103,7 +103,7 @@ main>div:last-child {
 }
 
 pre {
-    padding: 0.5rem 1rem;
+    padding: 1rem;
     overflow: scroll;
     text-align: left;
 }
@@ -154,6 +154,18 @@ a.tags {
 .tags-div a:first-child {
 
     padding-left: 0;
+}
+
+.filename {
+    background-color: #F5F5F5;
+    color: #292F36;
+    border-top: 1px solid #292F36;
+    border-left: 1px solid #292F36;
+    border-right: 1px solid #292F36;
+    padding: 0.2rem;
+    font-family: 'IBM Plex Mono', monospace;
+    line-height: 1.5em;
+    text-align: center;
 }
 
 @media (min-width:320px) {
