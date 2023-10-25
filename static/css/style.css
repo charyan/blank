@@ -5,7 +5,7 @@
 
 @font-face {
     font-family: 'IBM Plex Mono';
-    src: url('../fonts/IBMPlexMono-Medium.ttf') format('truetype');
+    src: url('../fonts/IBMPlexMono-Regular.ttf') format('truetype');
 }
 
 
@@ -151,6 +151,7 @@ kbd,
 samp {
     font-family: 'IBM Plex Mono', monospace;
     font-size: 1em;
+    line-height: 1.4em;
 }
 
 #tags h3,
