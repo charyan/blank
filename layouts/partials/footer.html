@@ -1,10 +1,14 @@
 <footer>
 	<nav>
 		<ul>
-			<li><a href="/index.html">Home</a></li>
-			<li><a href="/tags">Tags</a></li>
-			<li><a href="/about.html">About</a></li>
+			<li><a href="{{ .Site.BaseURL }}">Home</a></li>
+			<li><a href="{{ "tags" | relURL }}">Tags</a></li>
+			<li>
+                {{ with .Site.GetPage "page" "about.md" }}
+                    <a href="{{ .Permalink }}">About</a>
+                {{ end }}
+            </li>
 		</ul>
 	</nav>
-	<p>&copy; {{ now.Year }} {{ .Site.Title }}</a></p>
+	<p>&copy; {{ now.Year }} {{ .Site.Title }}</p>
 </footer>

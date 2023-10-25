@@ -18,6 +18,18 @@ Next, open `hugo.toml` in the base of the Hugo site and ensure the theme option 
 theme = "springbok"
 ```
 
+### About page
+Create `about.md` in your hugo site's `content` directory. The page must have the parameter `type` set to `special`.
+
+```
++++
+title = "About"
+type = "special"
++++
+
+Hello, this is my about page.
+
+```
 
 ## License
 
