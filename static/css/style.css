@@ -22,6 +22,15 @@ li {
     font-family: 'Noto Serif', serif;
 }
 
+article h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    color: #292F36;
+}
+
 main h1,
 main article {
     margin-top: 0;
@@ -110,7 +119,8 @@ article p {
 }
 
 p,
-li {
+li,
+footer ul li a {
     font-size: 1.1rem;
     margin: 1em 0;
     line-height: 1.75em;
@@ -212,6 +222,24 @@ a.tags {
     font-size: 1.5rem;
     padding: 0.2em 1em;
     border-radius: 5px;
+}
+
+footer ul {
+    list-style: none;
+    display: flex;
+    justify-content: space-evenly;
+    padding: 0;
+}
+
+footer ul>li {
+    display: inline-block;
+    width: auto;
+}
+
+footer ul li a {
+    padding: .5em 1em;
+    color: #292F36;
+    font-weight: bold;
 }
 
 @media (min-width:320px) {
