@@ -17,15 +17,29 @@ h2,
 h3,
 h4,
 h5,
-h6 {
+h6,
+li {
     font-family: 'Noto Serif', serif;
 }
 
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+.filename {
+    margin-top: 3em;
+}
 
+li {
+    margin: 0;
+}
 
 p,
 header a,
-time {
+time,
+li {
     color: #292F36;
 }
 
@@ -91,10 +105,15 @@ article p {
     margin-top: 0;
 }
 
-p {
+p,
+li {
     font-size: 1.1rem;
-    margin: 2em 0;
+    margin: 1em 0;
     line-height: 1.75em;
+}
+
+ul li {
+    margin: 0;
 }
 
 main>div:last-child {
@@ -169,6 +188,10 @@ a.tags {
     text-align: center;
 }
 
+.highlight pre {
+    margin-top: 0;
+}
+
 @media (min-width:320px) {
     /* smartphones, iPhone, portrait 480x320 phones */
 }
@@ -194,7 +217,6 @@ a.tags {
 
     p {
         font-size: 1.25rem;
-        margin: 2em 0;
         line-height: 1.75em;
     }
 }
