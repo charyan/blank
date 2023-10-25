@@ -22,7 +22,11 @@ li {
     font-family: 'Noto Serif', serif;
 }
 
-h1,
+main h1,
+main article {
+    margin-top: 0;
+}
+
 h2,
 h3,
 h4,
