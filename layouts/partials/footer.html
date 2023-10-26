@@ -2,7 +2,7 @@
 	<nav>
 		<ul>
 			<li><a href="{{ .Site.BaseURL }}">Home</a></li>
-			<li><a href="{{ "tags" | relURL }}">Tags</a></li>
+			<li><a href="{{ "tags/" | relURL }}">Tags</a></li>
 			<li>
                 {{ with .Site.GetPage "page" "about.md" }}
                     <a href="{{ .Permalink }}">About</a>
