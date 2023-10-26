@@ -201,6 +201,17 @@ a.tags {
     font-family: 'IBM Plex Mono', monospace;
     line-height: 1.5em;
     text-align: center;
+    display: flex;
+    justify-content: space-between;
+}
+
+.filename div {
+    display: inline-block;
+    margin: 0 1em;
+}
+
+.filename div.file-language {
+    font-weight: bolder;
 }
 
 .highlight pre {

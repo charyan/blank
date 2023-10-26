@@ -1,1 +1,10 @@
-<div class="filename">{{ .Get 0 }}</div>
+<div class="filename">
+    <div>
+        {{ .Get 0 }}
+    </div>
+    {{ if .Get 1 }}
+    <div class="file-language">
+        [{{ .Get 1 }}]
+    </div>
+    {{ end }}
+</div>
