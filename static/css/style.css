@@ -22,6 +22,10 @@ li {
     font-family: 'Noto Serif', serif;
 }
 
+p code {
+    background-color: #A30000;
+}
+
 article h1,
 h2,
 h3,
