@@ -3,6 +3,7 @@
 	<article>
 		<h1>{{ .Title }}</h1>
 		{{ if ne .Params.Type "special"}}
+			<div class="article-info">
 			<p class="reading-time"><b>Reading time</b> {{ .ReadingTime }} {{ if eq .ReadingTime 1 }} minute {{ else }} minutes {{ end }}</p>
 			{{ if .Params.Author }}
 			<p class="author"><b>Author</b> {{ .Params.Author }}</p>
@@ -15,6 +16,7 @@
 					<time datetime="{{ .Lastmod.Format " 2006-01-02T15:04:05" }}"><b>Updated</b> {{ .Lastmod.Format "2006-01-02" }}</time>
 				{{ end }}
 			{{ end }}
+			</div>
 		{{ end }}
 
 		{{ if .Params.tags }}

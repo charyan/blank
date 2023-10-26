@@ -257,6 +257,10 @@ footer ul li a {
     font-weight: bold;
 }
 
+.article-info {
+    margin-bottom: 4em;
+}
+
 @media (min-width:320px) {
     /* smartphones, iPhone, portrait 480x320 phones */
 }
