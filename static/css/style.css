@@ -297,3 +297,15 @@ footer ul li a {
 @media (min-width:1281px) {
     /* hi-res laptops and desktops */
 }
+
+@media print {
+    body {
+        background-color: white;
+    }
+
+    header,
+    footer nav,
+    aside {
+        display: none;
+    }
+}
