@@ -20,7 +20,7 @@ theme = "springbok"
 
 ## Features
 ### Home Page
-The home page shows the name of the site, a list of posts with their name and tags. In the footer, we have the following links: home, tags and about.
+The home page shows the name of the site, a list of posts with their name and tags. In the footer, we have the following links: home, tags, rss and about.
 
 ### Single Post
 ![Post](images/post.png)
@@ -95,7 +95,7 @@ To create a code block with a language but no filename, you can use an empty str
 
 ## License
 
-This theme is based on [blank](https://github.com/vimux/blank) under the [MIT license](https://github.com/charyan/springbok/blob/master/LICENSE).
+This theme is based on [blank](https://github.com/vimux/blank) under the [MIT license](https://github.com/charyan/springbok/blob/master/blank.LICENSE).
 It is licensed under the [GNU GPL version 3](https://www.gnu.org/licenses/gpl-3.0.txt).
 
 ```
