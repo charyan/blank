@@ -338,7 +338,7 @@ footer ul li a {
     }
 
 
-    .tag-item {
+    a.tag-item {
         background-color: #F5F5F5;
         color: #292F36;
     }
