@@ -93,6 +93,9 @@ To create a code block with a language but no filename, you can use an empty str
 ### Katex
 [KaTeX](https://katex.org/) is used to render TeX on each page. See `layouts/partials/katex.html` and the [KaTeX documentation](https://katex.org/docs/api) for more.
 
+### Dark Mode
+Dark mode based on browser preferences.
+
 ## License
 
 This theme is based on [blank](https://github.com/vimux/blank) under the [MIT license](https://github.com/charyan/springbok/blob/master/blank.LICENSE).

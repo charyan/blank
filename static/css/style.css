@@ -309,3 +309,59 @@ footer ul li a {
         display: none;
     }
 }
+
+@media (prefers-color-scheme: dark) {
+    body {
+        background-color: #1A1E23;
+    }
+
+    a {
+        color: #96C5FF;
+    }
+
+    a:visited {
+        color: #D48FFF;
+    }
+
+    p,
+    header a,
+    header a:visited,
+    time,
+    li,
+    main div {
+        color: #F5F5F5;
+    }
+
+    footer ul li a,
+    footer ul li a:visited {
+        color: #F5F5F5;
+    }
+
+
+    .tag-item {
+        background-color: #F5F5F5;
+        color: #292F36;
+    }
+
+    .filename {
+        background-color: #1A1E23;
+        color: #F5F5F5;
+        border-top: 1px solid #F5F5F5;
+        border-left: 1px solid #F5F5F5;
+        border-right: 1px solid #F5F5F5;
+    }
+
+    article h1,
+    h2,
+    h3,
+    h4,
+    h5,
+    h6 {
+        color: #F5F5F5;
+    }
+
+    p code {
+        color: #FF8585;
+    }
+
+}
