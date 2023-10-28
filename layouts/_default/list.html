@@ -17,7 +17,7 @@
 		{{ if ( eq $title "Tags" )}}
 			<div class="tag-container">
 			{{ range $tagName, $tagPages := .Site.Taxonomies.tags }}
-				<a class="tag-item" href="{{ `tags/` | relLangURL }}{{ $tagName | urlize }}">{{ $tagName }}</a>
+				<a class="tag-item" href="{{ `tags/` | relLangURL }}{{ $tagName | urlize }}/">{{ $tagName }}</a>
 			{{ end }}
 			</div>
 		{{ else }}
