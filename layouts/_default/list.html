@@ -23,7 +23,7 @@
 
 				{{ $sortedTags := sort $tagsWithCount "count" "desc" }}
 				{{ range $tag := $sortedTags }}
-					<a class="tag-item" href="{{ `tags/` | relLangURL }}{{ $tag.name | urlize }}">{{ $tag.name }} ({{ $tag.count }})</a>
+					<a class="tag-item" href="{{ `tags/` | relLangURL }}{{ $tag.name | urlize }}/">{{ $tag.name }} ({{ $tag.count }})</a>
 				{{ end }}
 			</div>				
 		{{ else }}
