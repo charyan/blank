@@ -16,10 +16,16 @@
 		
 		{{ if ( eq $title "Tags" )}}
 			<div class="tag-container">
-			{{ range $tagName, $tagPages := .Site.Taxonomies.tags }}
-				<a class="tag-item" href="{{ `tags/` | relLangURL }}{{ $tagName | urlize }}/">{{ $tagName }}</a>
-			{{ end }}
-			</div>
+				{{ $tagsWithCount := slice }}
+				{{ range $tagName, $tagPages := .Site.Taxonomies.tags }}
+					{{ $tagsWithCount = $tagsWithCount | append (dict "name" $tagName "count" $tagPages.Count) }}
+				{{ end }}
+
+				{{ $sortedTags := sort $tagsWithCount "count" "desc" }}
+				{{ range $tag := $sortedTags }}
+					<a class="tag-item" href="{{ `tags/` | relLangURL }}{{ $tag.name | urlize }}">{{ $tag.name }} ({{ $tag.count }})</a>
+				{{ end }}
+			</div>				
 		{{ else }}
 			{{ range .Paginator.Pages }}
 				{{ .Render "summary" }}

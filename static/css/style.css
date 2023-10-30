@@ -245,14 +245,14 @@ a.tags {
 }
 
 .tag-item {
-    background-color: #292F36;
-    color: #F5F5F5;
-    margin-right: .2em;
-    margin-top: .5em;
+    background-color: #F5F5F5;
+    color: #292F36;
     text-decoration: none;
     font-size: 1.5rem;
     padding: 0.2em 1em;
     border-radius: 5px;
+    margin: .5rem;
+    border: 1px solid #292F36;
 }
 
 footer ul {
@@ -355,8 +355,9 @@ footer ul li a {
 
 
     a.tag-item {
-        background-color: #F5F5F5DD;
-        color: #222;
+        background-color: #222;
+        color: #F5F5F5DD;
+        border: solid 1px #F5F5F5DD;
     }
 
     .filename {
