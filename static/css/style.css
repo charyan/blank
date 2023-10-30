@@ -328,7 +328,7 @@ footer ul li a {
 
 @media (prefers-color-scheme: dark) {
     body {
-        background-color: #1A1E23;
+        background-color: #222;
     }
 
     a {
@@ -356,11 +356,11 @@ footer ul li a {
 
     a.tag-item {
         background-color: #F5F5F5DD;
-        color: #292F36;
+        color: #222;
     }
 
     .filename {
-        background-color: #1A1E23;
+        background-color: #222;
         color: #F5F5F5DD;
         border-top: 1px solid #F5F5F5DD;
         border-left: 1px solid #F5F5F5DD;
