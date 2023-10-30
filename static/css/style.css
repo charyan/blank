@@ -1,7 +1,13 @@
 @font-face {
-    font-family: 'Noto Serif';
-    src: url('../fonts/NotoSerif-VariableFont_wdth,wght.ttf') format('truetype');
+    font-family: 'Noto Sans Regular';
+    src: url('../fonts/NotoSans-Regular.ttf') format('truetype');
 }
+
+@font-face {
+    font-family: 'Noto Sans SemiBold';
+    src: url('../fonts/NotoSans-SemiBold.ttf') format('truetype');
+}
+
 
 @font-face {
     font-family: 'IBM Plex Mono';
@@ -12,14 +18,24 @@
 
 p,
 a,
+li {
+    font-family: 'Noto Sans Regular', sans-serif;
+}
+
 h1,
 h2,
 h3,
 h4,
 h5,
 h6,
-li {
-    font-family: 'Noto Serif', serif;
+header a,
+h1 a,
+h2 a,
+h3 a,
+h4 a,
+h5 a,
+h6 a {
+    font-family: 'Noto Sans SemiBold', sans-serif;
 }
 
 p code {
@@ -329,26 +345,26 @@ footer ul li a {
     time,
     li,
     main div {
-        color: #F5F5F5;
+        color: #F5F5F5DD;
     }
 
     footer ul li a,
     footer ul li a:visited {
-        color: #F5F5F5;
+        color: #F5F5F5DD;
     }
 
 
     a.tag-item {
-        background-color: #F5F5F5;
+        background-color: #F5F5F5DD;
         color: #292F36;
     }
 
     .filename {
         background-color: #1A1E23;
-        color: #F5F5F5;
-        border-top: 1px solid #F5F5F5;
-        border-left: 1px solid #F5F5F5;
-        border-right: 1px solid #F5F5F5;
+        color: #F5F5F5DD;
+        border-top: 1px solid #F5F5F5DD;
+        border-left: 1px solid #F5F5F5DD;
+        border-right: 1px solid #F5F5F5DD;
     }
 
     article h1,
