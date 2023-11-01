@@ -87,6 +87,12 @@ li {
     margin: 0;
 }
 
+main img {
+    margin: 3rem auto;
+    display: block;
+    max-width: 100%;
+}
+
 p,
 header a,
 time,
