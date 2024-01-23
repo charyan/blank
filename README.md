@@ -96,6 +96,9 @@ To create a code block with a language but no filename, you can use an empty str
 ### Dark Mode
 Dark mode based on browser preferences.
 
+### Table of contents
+Add the parameter `toc = true` to add a table of content to a post.
+
 ## License
 
 This theme is based on [blank](https://github.com/vimux/blank) under the [MIT license](https://github.com/charyan/springbok/blob/master/blank.LICENSE).
